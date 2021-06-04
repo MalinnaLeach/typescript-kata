@@ -13,10 +13,12 @@
 ### THE CHALLENGE
 1) Check your VS Code is set up for TypeScript - you should see an error on test.ts
 2) Rename star-wars-dating.js to .ts
-3) Create an `Ewok` type and a `Wookie` type
-4) Type the `ewokCompatibilityChecker` function and investigate / fix any errors
-5) Change the fur types object into an enum, as use the enum name as a type
-6) Use both `in` and `is` to create a isWookie helper function that will help TypeScript understand if the potential date is a Wookie
-7) Create an `EwokDroid` type, and allow it as an option for the `ewokCompatibilityChecker` function
-8) Use the `as` keyword to deal with any errors that arise from this
+3) Create an `Ewok` type and a `Wookie` type based on the data examples
+4) Use these to type both `ewokList` and `wookieList` - you wouldn't normally do this, but it's a way to check your types are correct
+5) Use both `in` and `is` to create an isWookie helper function that will help TypeScript understand if the potential date is a Wookie
+6) Type the params of both pre-existing functions and investigate / fix any errors
+7) Change the fur types object into an enum, as use the enum name as a type
+8) Create an `EwokDroid` type; type the `droidsDisguisedAsEwoks` list to check your type is correct
+9) Allow `EwokDroid` as an option for the ewok param in the `ewokCompatibilityChecker` function
+10) Use the `as` keyword to deal with any errors that arise from this
 
