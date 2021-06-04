@@ -40,7 +40,7 @@ const droidsDisguisedAsEwoks = [{
     specialSkill: 'hacking into Imperial computers',
 },
 {
-    name: 'Droidoo',
+    name: 432544,
     furType: ewokFurTypes.GREY,
     likesWookies: true,
     faveFood: 'hrrrfle'
@@ -61,4 +61,5 @@ const ewokCompatibilityChecker = (ewok, potentialDate) => {
 // The ewok param should only be of Ewok type
 const tellEwokTheyAreAnEwok = (ewok) => {
     console.log('You are an Ewok!');
+    console.log(ewok.name);
 }
