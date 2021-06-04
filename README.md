@@ -17,7 +17,7 @@
 4) Use these to type both `ewokList` and `wookieList` - you wouldn't normally do this, but it's a way to check your types are correct
 5) Use both `in` and `is` to create an isWookie helper function that will help TypeScript understand if the potential date is a Wookie
 6) Type the params of both pre-existing functions and investigate / fix any errors
-7) Change the fur types object into an enum, as use the enum name as a type
+7) Change the fur types object into an enum, and use the enum name as a type
 8) Create an `EwokDroid` type; type the `droidsDisguisedAsEwoks` list to check your type is correct
 9) Allow `EwokDroid` as an option for the ewok param in the `ewokCompatibilityChecker` function
 10) Use the `as` keyword to deal with any errors that arise from this
