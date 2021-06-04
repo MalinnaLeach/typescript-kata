@@ -1,7 +1,7 @@
 # Ewokr
 
 - This is my hot new business idea - a dating app for Ewoks!
-- I can't code very well though, so I need some hotshot devs to tidy this up, and add some Typescript, which I hear is the new cool thing.
+- I can't code very well though, so I need some hotshot devs to tidy this up, and add some TypeScript, which I hear is the new cool thing.
 - I've only just starting listing all the different fur types, I'd like this to be a list of unique references, so it doesn't get messy as the list grows.
 
 ### The rules of Ewok dating
