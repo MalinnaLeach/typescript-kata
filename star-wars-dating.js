@@ -6,7 +6,7 @@ const ewokFurTypes = {
     PATTERNED: 'patterned',
 }
 
-const ewokList = [{
+const ewokList = [
   {
     name: 'Ewoky',
     furType: ewokFurTypes.GREY,
@@ -18,9 +18,9 @@ const ewokList = [{
     likesWookies: true,
     faveFood: 'hrrrfle'
   }
-}];
+];
 
-const wookieList = [{
+const wookieList = [
     {
         name: 'Wookle',
         bestFood: 'tinngr',
@@ -31,7 +31,7 @@ const wookieList = [{
         bestFood: 'hrrrfle',
         likesEwoks: true,
     }
-}]
+]
 
 const droidsDisguisedAsEwoks = [{
     name: 'Droidy',
