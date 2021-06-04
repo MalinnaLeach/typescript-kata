@@ -8,15 +8,15 @@
 - Patterned Ewoks are very fussy, they only ever like other patterned Ewoks.
 - Otherwise each ewok can have a fur preference.
 - Some open minded Ewoks like to date Wookies, but only if they share the same favourite food.
-- Sometimes droids like to dress up as ewoks to go on dates as Ewoks
+- Sometimes droids like to dress up as Ewoks to go on dates as Ewoks. I know that sounds wierd, but for the sake of TypeScript, just run with it.
 
 ### THE CHALLENGE
-1) Check your VS Code is set up for TypeScript - you could see an error on test.ts
+1) Check your VS Code is set up for TypeScript - you should see an error on test.ts
 2) Rename star-wars-dating.js to .ts
 3) Create an `Ewok` type and a `Wookie` type
 4) Type the `ewokCompatibilityChecker` function and investigate / fix any errors
 5) Change the fur types object into an enum, as use the enum name as a type
 6) Use both `in` and `is` to create a isWookie helper function that will help TypeScript understand if the potential date is a Wookie
 7) Create an `EwokDroid` type, and allow it as an option for the `ewokCompatibilityChecker` function
-8) Use the `as` keyword to deal with any errors that arise
+8) Use the `as` keyword to deal with any errors that arise from this
 
