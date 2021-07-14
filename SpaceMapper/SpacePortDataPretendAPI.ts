@@ -4,20 +4,25 @@ export const spacePortDataExtractor = (spacePortList: (keyof typeof promotedSpac
 
 };
 
-export const promotedSpacePortData = {
+export const getSpacePortData = () => ({
     hoth: {
         spaceshipCapacity: 5,
         starRating: 4,
         somethingBoolean: true,
     },
-    dsffs: {
+    degobaNorth: {
         spaceshipCapacity: 5,
         starRating: 4,
         somethingBoolean: true,
     },
-    sdfds: {
+    degobaSouth: {
+        spaceshipCapacity: 5,
+        starRating: 4,
+        somethingBoolean: true,
+    },
+    alderaan: {
         spaceshipCapacity: 5,
         starRating: 4,
         somethingBoolean: true,
     }
-}
+});
