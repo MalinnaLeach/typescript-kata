@@ -24,5 +24,10 @@ export const getSpacePortData = () => ({
         spaceshipCapacity: 5,
         starRating: 4,
         somethingBoolean: true,
+    },
+    deathStar: {
+        spaceshipCapacity: 5,
+        starRating: 4,
+        somethingBoolean: true,
     }
 });

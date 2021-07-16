@@ -6,4 +6,4 @@
 
 ### THE CHALLENGE
 1) Check your VS Code is set up for TypeScript - you should see an error on test.ts
-2) Open SpaceMapper.ts, and complete each challenge
+2) Open SpaceMapper.ts, and replace each `any` to complete all the challenges
