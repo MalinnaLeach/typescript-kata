@@ -3,7 +3,7 @@ import { getSpacePortData } from './SpacePortDataPretendAPI';
 // [1] Use a handy TypeScript utility to generate a type for the returned data
 // from the getPromotedSpacePortData function
 type SpacePortData = ReturnType<typeof getSpacePortData>;
-const spacePortData: SpacePortData = getSpacePortData();
+export const checkIfItWorks1: SpacePortData = getSpacePortData();
 
 // [2] The data from the API isn't always up to date, so we keep our own list
 // of spaceports that are no longer open. Create a new type that excludes these,
@@ -11,14 +11,14 @@ const spacePortData: SpacePortData = getSpacePortData();
 type ClosedSpacePorts = 'alderaan' | 'deathStar';
 type OpenSpacePortData = Omit<SpacePortData, ClosedSpacePorts>
 export const checkIfItWorks2: OpenSpacePortData = {
-  hoth: spacePortData['hoth'],
-  degobaNorth: spacePortData['degobaNorth'],
-  degobaSouth: spacePortData['degobaSouth'],
+  hoth: checkIfItWorks1['hoth'],
+  degobaNorth: checkIfItWorks1['degobaNorth'],
+  degobaSouth: checkIfItWorks1['degobaSouth'],
 }
 
 // [3] We want to create our own data set, to track whether we are promoting
 // each spaceport on the list.  Use the OpenSpacePortData type (above) to make
-// a mapped type for this data
+// a mapped type for this data.
 type IsSpacePortPromotedData = { [key in keyof OpenSpacePortData]: boolean}
 export const checkIfItWorks3: IsSpacePortPromotedData = {
   hoth: true,
@@ -35,20 +35,25 @@ export const checkIfItWorks4: IsSpacePortPromotedDataAlt = {
   degobaSouth: true,
 }
 
-// [5] Generic types are similar to the utility types that TS provide, 
+// [5] Sometimes we filter this list based on various factors.  Create a type
+// using IsSpacePortPromotedData (or Alt) that will allow any of the keys to be missing.
+type PartialIsSpacePortPromotedData = Partial<IsSpacePortPromotedData>;
+export const checkIfItWorks5: PartialIsSpacePortPromotedData = {
+  hoth: true,
+}
+
+// [6] Generic types are similar to the utility types that TS provide, 
 // but we can make them ourselves!  We have two different details types for
 // open and closed spaceports.  Create a utility type, using ClosedSpacePorts,
 // the keyword "extends" and a conditional expression, that will return the correct
 // type based on the SpacePort name.
 
-type OpenSpacePortSomething = { something: string, other: number };
+type OpenSpacePortInfo = { cafeName: string, toiletQty: number };
 
-type ClosedSpacePortSomething = { dontKnow: string };
+type ClosedSpacePortInfo = { dateOfClosure: string };
 
-type SomethingUtility<T> = T extends ClosedSpacePorts ? ClosedSpacePortSomething : OpenSpacePortSomething;
+type InfoUtility<T> = T extends ClosedSpacePorts ? ClosedSpacePortInfo : OpenSpacePortInfo;
 
-export const checkIfItWords5: SomethingUtility<'alderaan'> = { dontKnow: 'foo' };
+export const checkIfItWorks6: InfoUtility<'alderaan'> = { dateOfClosure: 'A long time ago..' };
 
-export const checkIfItWords6: SomethingUtility<'hoth'> = { something: 'foo', other: 2 };
-
-// [5] Something with Partial
+export const checkIfItWorks7: InfoUtility<'hoth'> = { cafeName: 'Frozen Treats', toiletQty: 5 };

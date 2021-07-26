@@ -1,33 +1,29 @@
 // This is an external API so can't be changed
 
-export const spacePortDataExtractor = (spacePortList: (keyof typeof promotedSpacePortData)[]) => {
-
-};
-
 export const getSpacePortData = () => ({
     hoth: {
         spaceshipCapacity: 5,
         starRating: 4,
-        somethingBoolean: true,
+        stepFreeAccess: false,
     },
     degobaNorth: {
         spaceshipCapacity: 5,
         starRating: 4,
-        somethingBoolean: true,
+        stepFreeAccess: true,
     },
     degobaSouth: {
         spaceshipCapacity: 5,
         starRating: 4,
-        somethingBoolean: true,
+        stepFreeAccess: false,
     },
     alderaan: {
         spaceshipCapacity: 5,
         starRating: 4,
-        somethingBoolean: true,
+        stepFreeAccess: true,
     },
     deathStar: {
         spaceshipCapacity: 5,
         starRating: 4,
-        somethingBoolean: true,
+        stepFreeAccess: true,
     }
 });
